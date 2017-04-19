@@ -1,0 +1,70 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset,
+input, textarea, p, blockquote, th, td { padding: 0; margin: 0; font-family: 'Nixie One', cursive; }
+a { text-decoration: none; }
+table { border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-weight: normal; font-style: normal; }
+strong { font-weight: bold; }
+ol, ul { list-style: none; margin: 0; padding: 0; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; margin: 0; padding: 0; color: #444; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body { font-family: arial,helvetica; color: #333; color: rgba(0,0,0,0.5); }
+.wrap { margin-left: auto; margin-right: auto; width: 960px; position: relative; }
+h1 { font-size: 6em; }
+p { font-size: 2em; }
+nav { position: absolute; top: 25px; right: 40px; z-index: 9999; }
+nav ul { }
+nav ul li { display: inline-block; }
+.section { text-align: center; }
+#menu li { display: inline-block; margin: 0; color: #000; }
+#menu li.active { color: #fff; }
+#menu li a { text-decoration: none; color: #000; }
+#menu li a:hover { color: #000; }
+#menu li:hover { }
+#menu li a, #menu li.active a { padding: 0 5px; display: block; }
+#menu li a { color: #fff; }
+#menu { height: 40px; z-index: 70; width: 100%; padding: 0; margin: 0; }
+
+
+/*MEGA MENU*/
+span.open-mega-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.mega-menu { position: absolute; top: 0; left: 0; width: 50vw; height: 100vh; background: #000; z-index: 99; display: none}
+.mega-menu ul { font-size: 40px; color: #fff; margin: 5vw 5vh; }
+.mega-menu ul li {}
+
+.mega-menu span.close {font-size: 40px;color: #fff;cursor: pointer;position: absolute;top: 1vw;left: 47vw;}
+/* Demos Menu
+ * --------------------------------------- */
+#demosMenu { position: fixed; bottom: 10px; right: 10px; z-index: 999; }
+.section { text-align: center; background: url("../img/pattern.svg"); background-repeat: no-repeat; background-attachment: fixed; }
+div#section0 { background-color: #cbe86b !important; background: none; }
+div#section1 { background-color: #00dffc !important; background: none; }
+div#section2 { background-color: #f2e9e1 !important; background: none; }
+div#section3 { background-color: #d62a9d !important; background: none; }
+
+
+/* standings */
+.circle-team {display: inline-block;margin: 0 40px;}
+.circle-team section {width: 250px;height: 250px;border-radius: 50%;background: rgba(96, 65, 62, 0.44);box-sizing: border-box;}
+
+.circle-team .name { font-size: 22px; width: 250px; margin-bottom: 40px; }
+.circle-team .points { font-size: 110px; padding-top: 58px; }
+.circle-team .goals { display: none; }
+.circle-team .golas-against { display: none; }
